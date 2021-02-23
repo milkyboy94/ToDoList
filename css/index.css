@@ -11,6 +11,18 @@ html {
   align-items: center;
 }
 
+.protector {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+}
 body {
   background-color: black;
   color: white;
@@ -62,6 +74,7 @@ body {
 }
 .js-toDoForm input:focus {
   border: none;
+  border-color: none;
 }
 
 .js-clock h1 {
@@ -138,4 +151,8 @@ body {
 .birthday {
   position: absolute;
   top: 10px;
+}
+
+.js-toDoForm:focus-within .js-weather {
+  opacity: 0;
 }
