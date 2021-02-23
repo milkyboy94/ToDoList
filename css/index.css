@@ -52,3 +52,31 @@ body {
   font-weight: bolder;
   font-size: large;
 }
+
+.js-toDoForm input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+.js-toDoForm input:focus {
+  border: none;
+}
+
+.js-clock h1 {
+  font-size: 70px;
+}
+
+.js-clock {
+  position: absolute;
+  top: 20px;
+}
+
+.js-greetings {
+  position: absolute;
+  top: 180px;
+}
+
+.intro {
+  font-size: 20px;
+}
