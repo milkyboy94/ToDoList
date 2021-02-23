@@ -58,6 +58,12 @@ body {
   border: none;
   border-bottom: 2px solid white;
   color: white;
+  width: 350px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .js-toDoForm input:focus {
   border: none;
@@ -79,4 +85,39 @@ body {
 
 .intro {
   font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.js-weather {
+  position: absolute;
+  bottom: 80px;
+}
+
+.package {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 300px;
+}
+
+.js-toDoList li {
+  margin-bottom: 20px;
+}
+
+.js-toDoList {
+  height: 250px;
+}
+
+.js-toDoList button {
+  width: 25px;
+  margin-right: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-toDoList li {
+  display: flex;
 }

@@ -47,15 +47,23 @@ function paintToDo(text) {
     text: text,
     id: newId,
   };
+
   toDos.push(toDoObj);
   saveToDos();
+
   //push를 써서 array 안에 element 하나를 넣어줄 수 있음
 }
 
 function handleSubmit(event) {
   event.preventDefault();
-  paintToDo(toDoInput.value);
-  toDoInput.value = "";
+
+  if (toDos.length > 4) {
+    alert(`하루일과 다섯개 초과해서 쓰지마셈
+어차피 다 못하잖아`);
+  } else {
+    paintToDo(toDoInput.value);
+    toDoInput.value = "";
+  }
 }
 
 function something(toDo) {
