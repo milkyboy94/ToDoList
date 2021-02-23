@@ -43,11 +43,6 @@ body {
   z-index: -1;
 }
 
-.form {
-  text-align: center;
-  border-bottom: 3px white;
-}
-
 .js-weather {
   font-weight: bolder;
   font-size: large;
@@ -120,4 +115,27 @@ body {
 
 .js-toDoList li {
   display: flex;
+}
+
+.form {
+  z-index: 3;
+  position: absolute;
+  top: 220px;
+}
+
+.form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  text-align: center;
+}
+
+.form input::placeholder {
+  color: white;
+}
+
+.birthday {
+  position: absolute;
+  top: 10px;
 }
