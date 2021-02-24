@@ -153,4 +153,34 @@ body {
 .birthday {
   position: absolute;
   top: 10px;
+  animation: floater 3s ease-in-out infinite;
+}
+
+@keyframes floater {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.js-toDoList button {
+  animation: buttonBeat 3s ease-in-out infinite;
+}
+
+@keyframes buttonBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: none;
+  }
 }
